@@ -9,3 +9,19 @@
   background-color: black;
   border-bottom: 1px solid white;
 }
+
+.navbar ul, li {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.nav-item {
+  padding: 10px 15px;
+  margin: 0px 5px;
+  border: 1px solid white;
+}
+.nav-item:hover {
+  background: white;
+  color: darkblue;
+}
