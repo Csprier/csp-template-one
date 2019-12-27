@@ -5,7 +5,7 @@
   margin: 0px;
   padding: 0px;
   top: 0px;
-  background-color: black;
+  background-color: white;
   border-bottom: 1px solid white;
 }
 .nav-elements {
@@ -28,28 +28,31 @@
 }
 
 .navbar ul {
+  position: relative;
+  top: 50%;
+  height: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  height: 25px;
+  width: auto;
   margin: 0px;
   padding: 0px;
   color: white;
 }
 
 .nav-item {
-  position: relative;
-  top: 50%;
-  height: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   text-align: center;
   width: 100px;
-  height: auto;
-  padding: 0px;
+  height: 50%;
+  padding: 10px;
   margin: 0px;
+  color: black;
   border: 1px solid white;
 }
 .nav-item:hover {
-  background: white;
-  color: darkblue;
+  border-bottom: 1px solid darkslateblue;
+  color: darkslateblue;
 }
