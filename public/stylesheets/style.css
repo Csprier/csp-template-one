@@ -1,14 +1,12 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  font-family: Arial;
+  font-size: 15px;
 }
 
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
-}
-
-a {
-  color: #00B7FF; 
+  margin: 0px;
+  padding: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
