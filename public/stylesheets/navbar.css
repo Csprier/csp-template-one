@@ -1,6 +1,11 @@
+.home {
+  position: relative;
+  float: left;
+}
+
 .toggle,
 [id^=drop] {
-	display: none;
+  display: none;
 }
 
 /* Background color of the nav container*/
@@ -11,7 +16,11 @@ nav {
   padding: 0;
   width: 100%;
   height: auto;
-	background-color: white;
+  background-color: white;
+	font-size:22px;
+	line-height: 32px;
+	word-wrap:break-word !important;
+	font-family: Arial;
 }
 
 /* Since we'll have the "ul li" "float:left" we need to add a clear after the container.*/
@@ -42,7 +51,7 @@ nav ul li {
 /* Styling the links.*/
 nav a {
 	display:block;
-	padding:12px 14px;	
+	padding:14px 14px;	
 	color:gray;
 	font-size:16px;
 	text-decoration:none;
@@ -67,7 +76,7 @@ nav ul li:hover > ul {
 	display: inherit;
 }
 
-/* Fisrt Tier Dropdown */
+/* First Tier Dropdown */
 nav ul ul li {
 	width:170px;
 	float:none;
@@ -76,24 +85,19 @@ nav ul ul li {
 }
 
 /* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
+ * Move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
 nav ul ul ul li {
 	position: relative;
 	top:-60px;
 	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
+	right:170px; 
 }
 
 /* Change ' >' in order to change the Dropdown symbol */
 li > a:after { content:  ' >'; }
 li > a:only-child:after { content: ''; }
-
-.home {
-  position: relative;
-  float: left;
-}
 
 /* 
 ---------------------------------------------
@@ -102,7 +106,6 @@ li > a:only-child:after { content: ''; }
 */
 
 @media all and (max-width : 768px) {
-
 	nav {
 		margin: 0;
 	}
@@ -134,16 +137,19 @@ li > a:only-child:after { content: ''; }
 		display: block;
 	}
 
-	/* Change menu item's width to 100% */
+  /* Top Level of the tree, inside the nav.*/
+  /* Change menu item's width to 100%.*/
 	nav ul li {
 		display: block;
 		width: 100%;
-		}
+	}
 
+  /* The actual dropdown menu.*/
 	nav ul ul .toggle,
 	nav ul ul a {
 		padding: 0 40px;
 	}
+
 
 	nav ul ul ul a {
 		padding: 0 80px;
