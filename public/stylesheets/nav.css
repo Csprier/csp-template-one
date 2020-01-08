@@ -1,0 +1,86 @@
+nav {
+  position: fixed;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0px;
+  width: 200px;
+  height: auto;
+}
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  width: 100px;
+  height: auto;
+}
+.dd-btn {
+  margin: 0px;
+  padding: 4px 12px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border: 1px solid lightslategray;
+}
+.dd-btn:hover {
+  background-color: lightsteelblue;
+  color: goldenrod;
+}
+
+.sub-nav {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+.sub-nav li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+  padding: 4px 8px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-bottom: 1px solid lightsteelblue;
+}
+.sub-nav li a {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+.sub-nav li:hover,
+.sub-nav li a:hover {
+  background-color: lightsteelblue;
+  color: goldenrod;
+}
+
+/* Dropdown elements */
+.slider {
+  overflow-y: hidden;
+  max-height: 500px;
+  transition-property: all;
+  transition-duration: .5s;
+}
+.slider.closed {
+  max-height: 0;
+}
+
+.slider-two {
+  overflow-y: hidden;
+  max-height: 500px;
+  transition-property: all;
+  transition-duration: .5s;
+}
+.slider-two.closed {
+  max-height: 0;
+}
